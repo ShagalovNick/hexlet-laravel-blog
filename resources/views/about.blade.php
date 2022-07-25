@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<h1>О блоге</h1>
-<p>Эксперименты с Laravel на Хекслете</p>
-<body>
-    
-</body>
-</html>
+@extends('layouts.app')
+
+<!-- Секция, содержимое которой обычный текст. -->
+@section('title', 'О блоге')
+
+<!-- Секция, содержащая HTML блок. Имеет открывающую и закрывающую часть. -->
+@section('content')
+    <h1>О блоге</h1>
+    <p>Эксперименты с Laravel на Хекслете</p>
+@endsection
